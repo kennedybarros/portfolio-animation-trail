@@ -1,0 +1,273 @@
+/* GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+/* CSS DEFAULT */
+
+* {
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+
+html,
+body {
+  height: 100%;
+  font-family: 'Inter';
+  user-select: none;
+  overflow: initial;
+}
+
+body {
+  background-color: #f2f2f2;
+}
+
+.container {
+  width: 100%;
+  padding-right: 5vw;
+  padding-left: 5vw;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.z-index {
+  z-index: 600;
+}
+
+/* LOADING */
+
+.animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  background-color: #edeff0;
+  color: #f2f2f2;
+  justify-content: center;
+  z-index: 700;
+}
+
+.animate {
+  font-size: 100px;
+  color: #171717;
+  -webkit-animation: animate 16s linear infinite;
+  animation: animate 16s linear infinite;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@keyframes animate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate span {
+  color: #e0e0e0;
+  margin: 0 10px;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+
+/* HEADER */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.logo-kennedy {
+  width: 2.5rem;
+}
+
+.language {
+  display: flex;
+  gap: 2rem;
+}
+
+.language-select {
+  font-weight: 600;
+  text-decoration: none;
+  font-size: calc(0.75rem + 0.24vw);
+  line-height: 120%;
+  color: #111111;
+}
+
+.language-default {
+  font-weight: 500;
+  font-size: calc(0.75rem + 0.24vw);
+  line-height: 120%;
+  text-decoration: none;
+  color: #999999;
+  transition: 500ms ease;
+}
+
+.language-default:hover {
+  color: #111111;
+}
+
+/* TYPOGRAPHY */
+
+.title {
+  font-weight: 600;
+  font-size: calc(2.875rem + 2.8vw);
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  color: #0d0d0d;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: calc(0.75rem + 0.24vw);
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #c4c4c4;
+}
+
+.body {
+  font-weight: 500;
+  font-size: calc(0.75rem + 0.24vw);
+  line-height: 120%;
+  color: #111111;
+}
+
+.link {
+  text-decoration: none;
+  position: relative;
+}
+
+.link::before {
+  background-color: #111111;
+  bottom: -4px;
+  content: '';
+  height: 1px;
+  position: absolute;
+  transition: width 0.5s ease-in-out;
+  width: 0;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+/* CONTENT */
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+}
+
+/* CONTENT LEFT */
+
+.content-about {
+  display: grid;
+  gap: 7.5625rem;
+}
+
+/* TITLE */
+
+.star {
+  height: 1.5rem;
+  width: 1.5rem;
+  margin-bottom: 2.5rem;
+  margin-left: -0.5rem;
+  display: inline-block;
+  animation: rotate 4s infinite linear;
+}
+
+@keyframes rotate {
+  to {
+    rotate: -360deg;
+  }
+}
+
+/* CONTENT RIGHT */
+
+.content-social {
+  display: grid;
+  gap: 7.5625rem;
+}
+
+.social a {
+  text-decoration: none;
+}
+
+/* IMGS */
+
+.content-img {
+  max-width: 28.125rem;
+  position: absolute;
+  border-radius: 4px;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 1281px) {
+  /* CSS */
+  body {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  /* CSS */
+  .content {
+    display: block;
+  }
+  .content-about {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 12.5rem;
+  }
+  .content-social {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 12.5rem;
+  }
+  .title {
+    font-size: 7rem;
+  }
+  .subtitle {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+  .body {
+    font-size: 1.5rem;
+    line-height: 120%;
+  }
+  .link {
+    font-size: 1.5rem;
+    line-height: 160%;
+  }
+  body {
+    overflow: initial;
+  }
+  .language-select,
+  .language-default {
+    font-size: 2rem;
+  }
+  .logo-kennedy {
+    width: 3.875rem;
+  }
+  .animation {
+    display: none;
+  }
+}
