@@ -6,7 +6,7 @@
 
 * {
   box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 
 html,
@@ -221,5 +221,13 @@ body {
   }
   .animation {
     display: none;
+  }
+  .star {
+    height: 2.5rem;
+    width: 2.5rem;
+  }
+  .social p,
+  .skills p {
+    text-align: right;
   }
 }
