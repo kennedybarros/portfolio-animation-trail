@@ -11,7 +11,7 @@
     <img src="./images/banner.png">
 </h1>
 
-<h3 align="center">You can access the project <a href="https://portfolio-animation-trail.netlify.app/" target="_blank">Clicking here</a></h3>
+<h3 align="center">You can access the project <a target="_blank" href="https://portfolio-animation-trail.netlify.app/" >Clicking here</a></h3>
 
 ---
 
