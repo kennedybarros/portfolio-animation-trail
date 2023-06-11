@@ -1,3 +1,86 @@
+/***********************************/
+/********** GSAP **********/
+
+anime.timeline().add({
+  targets: '.logo-kennedy',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 200,
+});
+
+anime.timeline().add({
+  targets: '.language',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 300,
+});
+
+anime.timeline().add({
+  targets: '.title',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 500,
+});
+
+anime.timeline().add({
+  targets: '.title-2',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 700,
+});
+
+anime.timeline().add({
+  targets: '.about',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 300,
+});
+
+anime.timeline().add({
+  targets: '.skills',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 400,
+});
+
+anime.timeline().add({
+  targets: '.tools',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 500,
+});
+
+anime.timeline().add({
+  targets: '.social',
+  translateY: [100, 0],
+  translateZ: 0,
+  opacity: [0, 1],
+  easing: 'easeOutExpo',
+  duration: 1000,
+  delay: 600,
+});
+
 {
   // body element
   const body = document.body;
