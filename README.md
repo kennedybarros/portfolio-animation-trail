@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img src="./images/logo-kennedy.svg">
+    <img color="#fff" src="./images/logo-kennedy.svg">
 </h1>
 
 <div align="center">
