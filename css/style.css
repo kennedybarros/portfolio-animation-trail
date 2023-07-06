@@ -301,15 +301,16 @@ body {
   }
   .content {
     display: grid;
+    gap: 16px;
     margin-top: 32px;
   }
   .content-about {
     order: 2;
-    gap: 32px;
+    gap: 16px;
   }
   .content-social {
     order: 3;
-    gap: 32px;
+    gap: 16px;
   }
   .title {
     font-size: 3.5rem;
