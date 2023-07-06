@@ -175,59 +175,162 @@ body {
 /* RESPONSIVE */
 
 @media (min-width: 1281px) {
-  /* CSS */
   body {
     overflow: hidden;
   }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  /* CSS */
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
   .content {
     display: block;
+    margin-top: 50px;
   }
   .content-about {
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 12.5rem;
+    margin-bottom: 4rem;
   }
   .content-social {
     grid-template-columns: 1fr 1fr;
-    margin-top: 12.5rem;
+    margin-top: 4rem;
   }
   .title {
-    font-size: 7rem;
+    font-size: 4.5rem;
   }
-  .subtitle {
-    font-size: 1.5rem;
-    line-height: 120%;
-  }
+  .subtitle,
+  .link,
   .body {
-    font-size: 1.5rem;
+    font-size: 0.875rem;
     line-height: 120%;
-  }
-  .link {
-    font-size: 1.5rem;
-    line-height: 160%;
-  }
-  body {
-    overflow: initial;
-  }
-  .language-select,
-  .language-default {
-    font-size: 2rem;
-  }
-  .logo-kennedy {
-    width: 3.875rem;
-  }
-  .animation {
-    display: none;
-  }
-  .star {
-    height: 2.5rem;
-    width: 2.5rem;
   }
   .social p,
   .skills p {
     text-align: right;
+  }
+  .language-select,
+  .language-default {
+    font-size: 1rem;
+  }
+  body {
+    overflow: initial;
+  }
+
+  .animation {
+    display: none;
+  }
+  .social p,
+  .skills p {
+    text-align: right;
+  }
+  .content-img {
+    display: none;
+  }
+  .star {
+    margin-bottom: 1.5rem;
+    width: 1.5rem;
+  }
+  .logo-kennedy {
+    width: 2rem;
+  }
+  .content-title {
+    display: grid;
+    justify-content: center;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .content {
+    display: block;
+    margin-top: 50px;
+  }
+  .content-about {
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 4rem;
+  }
+  .content-social {
+    grid-template-columns: 1fr 1fr;
+    margin-top: 4rem;
+  }
+  .title {
+    font-size: 64px;
+  }
+  .subtitle,
+  .link,
+  .body {
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
+  .social p,
+  .skills p {
+    text-align: right;
+  }
+  .language-select,
+  .language-default {
+    font-size: 1rem;
+  }
+  .content-img {
+    display: none;
+  }
+  .content-img {
+    display: none;
+  }
+  .star {
+    margin-bottom: 1.5rem;
+    width: 1.5rem;
+  }
+  .logo-kennedy {
+    width: 2rem;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .container {
+    padding-bottom: 4rem;
+  }
+  .header {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+  .content {
+    display: grid;
+    margin-top: 32px;
+  }
+  .content-about {
+    order: 2;
+    gap: 32px;
+  }
+  .content-social {
+    order: 3;
+    gap: 32px;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+  .subtitle,
+  .link,
+  .body {
+    font-size: 0.875rem;
+    line-height: 120%;
+  }
+  .content-img {
+    display: none;
+  }
+  .language-select,
+  .language-default {
+    font-size: 1rem;
+  }
+  .star {
+    margin-bottom: 1.5rem;
+    width: 1.5rem;
+  }
+  .logo-kennedy {
+    width: 2rem;
   }
 }
