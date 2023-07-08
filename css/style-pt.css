@@ -300,15 +300,18 @@ body {
   }
   .content {
     display: grid;
+    gap: 16px;
     margin-top: 32px;
   }
   .content-about {
+    grid-template-columns: 1fr 1fr;
     order: 2;
-    gap: 32px;
+    gap: 16px;
   }
   .content-social {
+    grid-template-columns: 1fr 1fr;
     order: 3;
-    gap: 32px;
+    gap: 16px;
   }
   .title {
     font-size: 3.5rem;
