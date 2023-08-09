@@ -3,8 +3,8 @@
 </h1>
 
 <div align="center">
-    <img src="https://img.shields.io/github/repo-size/kennedybarros/personal-portfolio?color=0C0C0C" />
-    <img src="https://img.shields.io/github/license/kennedybarros/personal-portfolio?color=0C0C0C"/>
+    <img src="https://img.shields.io/github/repo-size/kennedybarros/portfolio-animation-trail?color=0C0C0C" />
+    <img src="https://img.shields.io/github/license/kennedybarros/portfolio-animation-trail?color=0C0C0C"/>
 </div>
 
 <h1 align="center">
